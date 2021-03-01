@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_10"
+    tools:context=".GeneracionTurnos">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/azul_oscuro" />
+
+
+    <LinearLayout
+        android:layout_width="1000px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/login_redondeado"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textTurnos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/pt_serif"
+            android:text="Generacion de turnos"
+            android:textColor="@color/black"
+            android:textSize="72px"
+            />
+
+        <TextView
+            android:id="@+id/textTipoDeVacunas"
+            android:layout_width="871px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Seleccione el tipo de vacuna:"
+            android:fontFamily="@font/pt_serif"
+            />
+
+        <Spinner
+            android:id="@+id/txtVacunas"
+            android:layout_width="871px"
+            android:layout_height="wrap_content"
+            android:entries="@array/ComboVacunas"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="871px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Seleccione el centro de acopio:"
+            android:fontFamily="@font/pt_serif"
+            android:layout_gravity="center"
+            />
+
+        <Spinner
+            android:id="@+id/txtCentrosAcopio"
+            android:layout_width="871px"
+            android:layout_height="wrap_content"
+            android:entries="@array/ComboCentrosAcopio"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="871px"
+            android:layout_height="wrap_content"
+            android:text="Seleccione la fecha:"
+            android:layout_gravity="center"
+            android:fontFamily="@font/pt_serif"
+            android:layout_marginTop="10dp"
+            />
+
+            <EditText
+                android:id="@+id/txt_Fecha"
+                android:layout_width="871px"
+                android:layout_height="136.5px"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Fecha"
+                android:clickable="true"
+                android:focusable="false"
+                android:fontFamily="@font/pt_sans_caption"
+                android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="871px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Seleccione la hora:"
+            android:fontFamily="@font/pt_serif"
+            />
+
+        <EditText
+            android:id="@+id/txt_hora"
+            android:layout_width="871px"
+            android:layout_height="136.5px"
+            android:ems="10"
+            android:hint="Hora"
+            android:clickable="true"
+            android:focusable="false"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/pt_sans_caption"
+            android:layout_gravity="center"
+            />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="871px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Ubicación de Centro de Acopio en Google Maps:"
+                android:fontFamily="@font/pt_serif"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/btnIrMaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver Ubicación en google maps"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_ingresar_login"
+                />
+
+        <Button
+            android:id="@+id/btnGenerar"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Generar turno"
+            android:background="@drawable/btn_ingresar_login"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
